@@ -131,7 +131,7 @@ REST Udemyで学んだこと
   * API利用者はリダイレクトを実装しないことが多い。REST APIでは基本的に300番台を使用しない。
 * 400番台：クライアントサイドエラー
   * 400 Bad Request：その他のエラー。
-  * 401 Unautorized：認証されていない。
+  * 401 Unauthorized：認証されていない。
   * 403 Forbidden：リソースアクセス権限がない。
     * このエラーを出すと「存在すること」が確認できてしまう。存在を隠したい場合は、404 Not Foundにする。
   * 404 Not Found：リクエストされたリソースが存在しない。
@@ -223,7 +223,7 @@ REST Udemyで学んだこと
   * 署名：改ざんされていないかを確認するための署名。
 * jwt.ioでJWTを画面上で確認することができる。
 
-#### Autorizationヘッダー
+#### Authorizationヘッダー
 * JWTを使って認証を利用する際にはAuthorizationヘッダーを利用する。
 * Authorizationヘッダーのtypeには以下のようなものがある。
   * Basic：ベーシック認証（IDとパスワードを平文で送信）
