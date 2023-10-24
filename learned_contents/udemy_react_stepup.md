@@ -23,3 +23,9 @@ const onClickClose = useCallback(() => setOpen(false), [setOpen]);
 > https://www.udemy.com/course/react_stepup/learn/lecture/24823324#questions/14555890
 #### 混同しやすい内容
 * 変数のメモ化で`useMemo`という機能も存在する。余り使うことはない。変数定義の右辺の中身が複雑化した場合、再レンダリング時に再計算しなくて済むので使用すると良い。
+
+#### セクション4.様々なCSSの当て方
+* 5種類ほどCSSの当て方が紹介されているので必要に応じて見返す。使用するライブラリによって記法が違う。
+
+#### セクション5.ルーティング
+* React Routerを使うのが主流。
