@@ -29,3 +29,10 @@ const onClickClose = useCallback(() => setOpen(false), [setOpen]);
 
 #### セクション5.ルーティング
 * React Routerを使うのが主流。
+*
+#### セクション6.Atomic Design
+* コンポーネントが画面を構成しているという考え方。画面要素を5段階に分けてコンポーネント化する。
+* React、Vue用の概念ではない。
+* atoms, molocules, organisms, template, pagesの5要素に分ける。
+* AtomicDesignはあくまでベースの概念なので、必要に応じてカスタマイズする。
+* 要素の関心を意識してコンポーネントを作ること。
