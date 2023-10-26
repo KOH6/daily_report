@@ -29,10 +29,25 @@ const onClickClose = useCallback(() => setOpen(false), [setOpen]);
 
 #### セクション5.ルーティング
 * React Routerを使うのが主流。
-*
+
 #### セクション6.Atomic Design
 * コンポーネントが画面を構成しているという考え方。画面要素を5段階に分けてコンポーネント化する。
 * React、Vue用の概念ではない。
 * atoms, molocules, organisms, template, pagesの5要素に分ける。
 * AtomicDesignはあくまでベースの概念なので、必要に応じてカスタマイズする。
 * 要素の関心を意識してコンポーネントを作ること。
+
+#### セクション7.グローバルなstate管理
+* グローバルなstateがないと、親→子→孫→ひ孫→…という形でバケツリレー式にpropsを渡していく必要がある。
+* Context、Recoilを使うやり方がある。今はRecoil主流になってそう？
+
+#### セクション8.JSONPlaceholderでのデータ取得
+* JSONPlaceholderのサイトのAPIを叩くとサンプルのJSONを返してくれる。
+* axiosでAPIを叩いて非同期でデータを扱える。
+
+#### セクション9.TypeScript
+* 新規開発ではTyoeScirptを絶対使う！
+
+#### セクション11.カスタムフック
+* コンポーネント内からロジックを分離して別ファイルにしたもの。
+* ただの関数。`use`で始まる名前にする。
