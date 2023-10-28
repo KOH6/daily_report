@@ -69,3 +69,7 @@ const onClickClose = useCallback(() => setOpen(false), [setOpen]);
 
 - コンポーネント内からロジックを分離して別ファイルにしたもの。
 - ただの関数。`use`で始まる名前にする。
+
+#### セクション 12.実践（ChakraUI）
+
+- レクチャー 71 の ChakraUI でのレスポンシブ対応ヘッダー作成はデザインする際に役に立ちそう。
