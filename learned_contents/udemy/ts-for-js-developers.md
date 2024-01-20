@@ -108,3 +108,9 @@ Record<TypeA,TypeB >
 ```ts
 type Exclude<T, U> = T extends U ? never : T;
 ```
+
+### React
+
+- Non-Null Asseertion Operator
+  - `useRef<HTMLInputElement>(null!)`のように null のあとの`!`を Non-Null Asseertion Operator という。
+  - 便宜的に null で初期化するが、null じゃないことを保証できる際にエラーを回避するため使える。
